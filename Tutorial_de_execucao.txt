@@ -1,0 +1,20 @@
+# PROJETO_UMNI_2.0_PCS3115
+Projeto de Sistemas Digitais 1 em verilog para um processador de um umidificador
+
+Olá, para iniciar as considerações, primeiramente ressalto que:
+
+1: todos os arquivos de funções usadas estão na pasta, incluindo todos os testbenchs feitos, para a conferência individual dos circuitos
+2: todos os códigos estão comentados com o seu funcionamento
+3: o relatório tem especificações mais detalhadas sobre como o projeto funciona
+4: a compilação e os testes foram completamente feitos em verilog, pois o uso do Questa e do Quartus era muito difícil e não foi explicado em sala (isso foi comum para a maioria dos grupos)
+5: perdão pela desorganização da pasta, mas garanto que todos os arquivos estão lá
+
+Isso dito, para executar os arquivos principais (UMNI.v e UMNI_tb.v), primeiramente usa-se o compilador VSCode para simular o arquivo em verilog (com o Quartus e com o Questa instalados no sistema, claro). Assim, com a pasta work também continda neste repositório, deve-se abrir a pasta completa "Umni_2.0" dentro do VSCode, com a extensão de verilog intalada nele. Após isso, basta simular usando o comando no terminal "vsim -c work.UMNI_tb" (ou "vsim -c work.nome_do_testbench" sem o ".v" no final), que iniciará a execução do arquivo de testbench dentro do terminal, incluindo também a criação do arquivo "transcript" que literalmente é a transcrição do escrito do terminal.
+
+Dessa forma, uma vez iniciada a simulação, pede-se para digitar o comando "run" seguido de um numero de ciclos de tempo que deve ser rodado no programa (pede-se um valor acima de 10000 para um teste mais preciso). Caso haja travamento, pressiona-se "Ctrl + C" para parar o "run". Para encerrar a execução e testar um novo testench (como os inúmeros que estão dentro da pasta) basta digitar "q" ou "quit" no terminal.
+
+OBS: também recomenda-se, caso tenha algum erro de compilação, digitar "vlog" seguido do nome dos arquivos (".v") da pasta, incluindo os testbenchs, para que seja criado um novo executável para os testes de cada uma das unidades programadas no projeto.
+
+Agradecidos,
+Henrique, Victor, Gastón e Caio.
+Divirta-se!
